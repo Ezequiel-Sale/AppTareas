@@ -20,10 +20,8 @@ body {
     border-radius: 5px;
 }
 .list{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    margin-top: 3rem;
     padding: 25px;
     background-color: var(--light);
     width: 100%;
@@ -43,7 +41,7 @@ body {
 }
 #dateText{
     position: absolute;
-    left: 75%;
+    left: 65%;
     letter-spacing: 3px;
     text-transform: uppercase;
 } 
@@ -90,6 +88,8 @@ input:focus{
     color: var(--light);
 }
 .task{
+    display: flex;
+    justify-content: space-between;
     background-color: var(--primary);
     padding: 15px;
     margin-top: 15px;
@@ -100,4 +100,15 @@ input:focus{
     background-color: var(--disabled);
     text-decoration: line-through;
     color: var(--dark);
+}
+
+.botonBorrar{
+    justify-content: flex-end;
+    border-radius: 20%;
+    background-color: #f60414;
+    height: 1.5rem;
+    width: 1.5rem;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-color: #000;
 }
